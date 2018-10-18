@@ -14,42 +14,80 @@ public class User implements Serializable {
     //define attributes fullname, ...
     
     //define set/get methods for all attributes.
-    private String fullName;
-    private String email;
+    private String fullname;
+    private String username;
+    private String emailAddress;
+    private String birthdate;
+    private String password;
+    private String questionNo;
+    private String answer;
+    
     public User()
     {
-        fullName = "";
-        email = "";
+        fullname = "";
+        username = "";
+        emailAddress = "";
+        birthdate = "";
+        password = "";
+        questionNo = "";
+        answer = "";
     }
-    public User(String fromString)
+    //setters and getters
+    public String getfullname()
     {
-        String[] data = fromString.replace("[", "").split(",");
-        this.setFullName(data[0]);
-        this.setEmail(data[1]);
+        return this.fullname;
     }
-    public String getFullName()
+    public void setfullname(String fullname)
     {
-        return this.fullName;
+        this.fullname = fullname;
     }
-    public void setFullName(String fullName)
+    public String getusername() 
     {
-        this.fullName = fullName;
+        return this.username;
     }
-    public String getEmail()
+    public void setusername(String userName)
     {
-        return this.email;
+        this.username = userName;
     }
-    public void setEmail(String email)
+    public String getemail()
     {
-        this.email = email;
+        return this.emailAddress;
     }
-    @Override
-    public String toString()
+    public void setemail(String email)
     {
-      StringBuilder sb = new StringBuilder();
-      sb.append(String.format("[%s,%s]", this.getFullName(), this.getEmail()));
-      return sb.toString();
+        this.emailAddress = email;
     }
-    
-    
+    public String getbirthdate()
+    {
+        return this.birthdate;
+    }
+    public void setbirthdate(String birthDate)
+    {
+       this.birthdate = birthDate;
+    }
+    public String getpassword()
+    {
+        return this.password;
+    }
+    public void setpassword(String password)
+    {
+        this.password = password;
+    }
+    public String getquestionno()
+    {
+        return this.questionNo;
+    }
+    public void setquestionno(String questionNo)
+    {
+        this.questionNo = questionNo;
+    }
+    public String getanswer()
+    {
+        return this.answer;
+    }
+    public void setanswer(String answer)
+    {
+        this.answer = answer;
+    }
+  
 }
