@@ -36,6 +36,10 @@ ul {
 }
 
 /* The styles for the specific elements (by Id) */
+#logout_list {
+    float: right;
+}
+
 #header_bar {
     position: fixed;
     top: 0;

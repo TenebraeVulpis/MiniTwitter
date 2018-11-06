@@ -1,17 +1,18 @@
-<%-- 
-    Document   : header.jsp
-    Created on : Sep 24, 2015, 6:47:09 PM
-    Author     : xl
---%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+<div id="header_bar">
+    <c:if test="${user != null}">
+        <ul>
+            <li><a href="home.jsp">Home</a></li>
+            <li><a href="notifications.jsp">Notifications</a></li>
+            <li><a href="signup.jsp">Profile</a></li>
+            <li id="logout_list">
+                <form method="post" action="membership">
+                    <input type="hidden" name="action" value="logout">
+                    <input type="submit" name="logout" value="Sign Out" 
+                        class="logout_button"/>
+                </form>
+            </li>
+        </ul>
+    </c:if>
+</div>
