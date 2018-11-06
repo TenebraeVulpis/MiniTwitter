@@ -1,23 +1,22 @@
 <%-- 
-    Document   : forgotpassword
-    Created on : Oct 16, 2018, 3:25:57 PM
+    Document   : notfounderror
+    Created on : Oct 16, 2018, 7:32:46 PM
     Author     : Nicolas Wilhoit
 --%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="styles/main.css" />
         <link rel="stylesheet" type="text/css" href="styles/header.css" />
         <link rel="stylesheet" type="text/css" href="styles/footer.css" />
-        <title>Forgot Password</title>
+        <link rel="stylesheet" type="text/css" href="styles/main.css" />
+        <title>Resource Not Found Page</title>
     </head>
     <body>
-        <c:import url="header.jsp" />
-            <h1>Fill in Later</h1>
-        <c:import url="footer.jsp" />
+        <c:import url="/header.jsp" />
+            <h1>404 Error - Requested Page could not be found!</h1>
+        <c:import url="/footer.jsp" />
     </body>
 </html>

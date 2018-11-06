@@ -1,0 +1,17 @@
+/* The styles for the elements */
+
+
+/* The styles for the classes */
+.login_button {
+    display: inline-block;
+    text-align: center;
+    background-color: slateblue;
+    color: white;
+    width: 15%;
+    font-size: 100%;
+}
+.login_button:hover {
+    background-color: lightslategray;
+}
+
+/* The styles for the specific elements (by Id) */

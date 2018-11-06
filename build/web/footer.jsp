@@ -4,12 +4,14 @@
     Author     : xl
 --%>
 
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<div id="footer_bar" >
-    <c:set var="date" scope="session" value="<%= new java.util.Date() %>"/>
-    <div class="info">
-        <span class="info copyright_info">&copy; Copyright 2018 Nicolas Wilhoit & Matthew King/span>
-        <span class="info date_info"><fmt:formatDate dateStyle="FULL" value="${sessionScope.date}"/></span>
-    </div>
-</div>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+    </body>
+</html>

@@ -1,7 +1,75 @@
 /* The styles for the elements */
+br {
+    clear: both;
+}
+
+h1 {
+    font-size: 125%;
+    color: slateblue;
+    margin-bottom: .5em;
+}
+
+span {
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    text-align: center;
+    width: 10em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+html, body {
+    height: 80vh;
+    width: 100%;
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="password"], select {
+    width: 100px;
+    font: 10px Tahoma, Verdana, Sans-serif;
+    background: white;
+    margin-left: .5em;    
+    margin-bottom: .5em;
+}
 
 /* The styles for the classes */
+.pad_top {
+    padding-top: 0.25em;
+    text-align: center;
+}
+.notVisible {
+    display: none;
+}
+.isVisible {
+    display: inline;
+}
+
+.button{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 25px;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 85%;
+    font-weight: bold;
+    -webkit-transition-duration: 0.30s;
+    transition-duration: 0.30s;
+}
 
 /* The styles for the specific elements (by Id) */
-
-
+#error_message {
+    background-color: #ffcccc;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,32 @@
+/* The styles for the elements */
+
+
+/* The styles for the classes */
+.submit_button {
+    background-color: slateblue;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    margin-right: 5px;
+}
+.submit_button:hover {
+    background-color: lightslategray;
+    color: white;
+}
+.reset_button {
+    display: inline-block;
+    text-align: center;
+    background-color: slategray;
+    color: white;
+    width: 10%;
+    
+}
+.reset_button:hover {
+    background-color: lightslategray;
+}
+
+/* The styles for the specific elements (by Id) */
+#signup_form {
+    width: 100%;
+}
