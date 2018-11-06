@@ -1,17 +1,16 @@
-<%-- 
-    Document   : notfounderror
-    Created on : Oct 16, 2018, 7:32:46 PM
-    Author     : Nicolas Wilhoit
---%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
+
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="styles/header.css" />
         <link rel="stylesheet" type="text/css" href="styles/footer.css" />
         <link rel="stylesheet" type="text/css" href="styles/main.css" />
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
         <title>Resource Not Found Page</title>
     </head>
     <body>
