@@ -1,11 +1,59 @@
-/* The styles for the elements */
-@media screen and (max-width: 700px) {
-    .flex-container {
-        flex-direction: column;
-    }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 3, 2018, 7:23:05 PM
+    Author     : Matthew King
+*/
+#tweet_composer {
+    width: 20vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
-/* The styles for the classes */
+#composer {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+#tweet_form {
+    width: auto;
+    margin: 0px;
+    text-align: right;
+}
+#profile_pic img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100px;
+}
+#tweet_pic img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 30px;
+}
+#follow_pic img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 30px;
+}
+
+#suggested_users, #user_feed {
+    overflow: auto;
+    height: 80vh;
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
 .tweets, .users {
     text-align: center;
     margin: 20px;
@@ -18,7 +66,7 @@
 }
 
 .main_column {
-    flex: 75%;
+    flex: 70%;
 }
 
 .side_column {
@@ -27,7 +75,7 @@
 }
 
 .tweet_button, .delete_button {
-    background-color: slateblue;
+    background-color: cornflowerblue;
     color: white;
     display: inline-block;
     text-align: center;
@@ -54,32 +102,13 @@
 .delete_button:hover {
     background-color: darkred;
 }
-
-/* The styles for the specific elements (by Id) */
-#composer {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
+/*change color of user mention text*/
+.blueX {
+    color: blue;
 }
 
-#tweet_composer {
-    width: 20vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#tweet_form {
-    width: auto;
-    margin: 0px;
-    text-align: right;
-}
-
-#suggested_users, #user_feed {
-    overflow: auto;
-    height: 80vh;
-    width: 85%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 700px) {
+    .flex-container {   
+        flex-direction: column;
+    }
 }
